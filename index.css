@@ -35,6 +35,17 @@ button:hover {
   filter: brightness(0.8);
 }
 
+#repo-link {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+#repo-link img {
+  width: 32px;
+  height: 32px;
+}
+
 h1 {
   width: 600px;
   text-align: center;
