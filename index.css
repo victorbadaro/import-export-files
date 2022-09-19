@@ -35,12 +35,13 @@ button:hover {
   filter: brightness(0.8);
 }
 
-#importButton {
-  background-color: #2CEAA3;
+h1 {
+  width: 600px;
+  text-align: center;
 }
 
-#exportButton {
-  background-color: #92BCEA;
+p {
+  margin-bottom: 48px;
 }
 
 .box {
@@ -48,6 +49,14 @@ button:hover {
   width: 500px;
   border: 2px solid #fff;
   border-radius: 8px;
+}
+
+#importButton {
+  background-color: #2CEAA3;
+}
+
+#exportButton {
+  background-color: #92BCEA;
 }
 
 form {
