@@ -5,23 +5,18 @@
   box-sizing: border-box;
 }
 
+body, input, button, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    -45deg,
-    rgba(59,173,227,1) 0%,
-    rgba(87,111,230,1) 25%,
-    rgba(152,68,183,1) 51%,
-    rgba(255,53,127,1) 100%
-  );
+  background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgba(173,0,171,1) 0%, rgba(15,51,92,1) 90% );
   color: #fff;
-  animation: AnimateBG 20s ease infinite;
 }
 
 a {
@@ -30,11 +25,49 @@ a {
 }
 
 button {
+  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: filter 200ms;
 }
 
-@keyframes AnimateBG { 
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+button:hover {
+  filter: brightness(0.8);
+}
+
+#importButton {
+  background-color: #2CEAA3;
+}
+
+#exportButton {
+  background-color: #92BCEA;
+}
+
+.box {
+  padding: 16px;
+  width: 500px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+form {
+  margin-top: 24px;
+}
+
+input {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+input + input {
+  margin-top: 8px;
 }
