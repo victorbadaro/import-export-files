@@ -71,3 +71,7 @@ input::placeholder {
 input + input {
   margin-top: 8px;
 }
+
+input#fileSelector {
+  display: none;
+}
